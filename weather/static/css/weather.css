@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Exo+2&display=swap');
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #000;
+}
+
+header {
+    background: #1c1c1c;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+header > p {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 60px;
+}
+.main-flex {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-select {
+    display: flex;
+    background: #121212;
+    height: 400px;
+    width: 400px;
+    border: 1px solid #7ddbb5;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.city-select:hover {
+    border: 1px solid #90ecf5;
+    transform: scale(1.01);
+}
+
+.city-select > form {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.city-select > form > .set-city {
+    width: auto;
+    font-size: 140%;
+    background: none;
+    border: 1px solid #f75123;
+    border-radius: 10px;
+    outline: none;
+    height: 50px;
+    margin-bottom: 50px;
+    color: seashell;
+    text-align: center;
+}
+.city-select > form > .btn-get{
+    width: 230px;
+    height: 5vh;
+    background: none;
+    color: seashell;
+    border: 1px solid #f75128;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.5s;
+}
+
+.city-select > form > .btn-get:hover {
+    background: #bfd9d7;
+    color: #101010;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    height: 400px;
+    width: 400px;
+    border: 1px solid #7ddbb5;
+    border-radius: 10px;
+    transition: 0.25s;
+    margin-left: 100px;
+}   
+
+.info:hover {
+    border: 1px solid #90ecf5;
+    transform: scale(1.01);
+}
+
+.alert {
+    margin-bottom: 5px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    background: none;
+    border: 1px solid #f75128;
+    border-radius: 10px;
+}
+.alert > span {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.alert > span > b {
+    color: #cff5f8;
+}
+
+.alert > span > div {
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+    text-align:center;
+}
+
+:-moz-placeholder { 
+    text-align:center;  
+}
+
+::-moz-placeholder {  
+    text-align:center;  
+}
+
+:-ms-input-placeholder {  
+    text-align:center; 
+}
+

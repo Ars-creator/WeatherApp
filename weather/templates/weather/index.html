@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/weather.css' %}">
+</head>
+<body>
+    <header><p>Weather For You</p></header>
+    <section class="main-flex">
+        <section class="city-select">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.name }}
+                <button type="submit" class="btn-get">
+                    <b>Посмотреть</b>
+                </button>
+            </form>
+        </section>
+
+        <section class="info">
+            {% for info in all_info %} 
+            <div class="alert">
+                <span><b>Город:</b>  <div>{{ info.city }}</div> </span>
+                <span><b>Температура:</b> <div>{{ info.temp }} <sup>o</sup></div> </span>
+                <span><img src="https://openweathermap.org/img/w/{{ info.icon }}.png" alt="Погода" class=></span>
+            </div>
+            {% endfor %}
+        </section>
+        
+
+    </section>
+</body>
+</html>
